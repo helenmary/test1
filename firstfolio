@@ -1,37 +1,26 @@
-<div type="act" n="5">
-<div type="scene" n="1">
-<head rend="italic center">Actus Quintus.</head>
-<head type="supplied">[Act 5, Scene 1]</head>
-<stage rend="italic" type="entrance">Enter Theseus, Hippolita, Egeus and his Lords.</stage>
-<sp who="#F-mnd-hip">
-<speaker rend="italic">Hip.</speaker>
-<l n="1717">
+Actus Quintus.
+
+Enter Theseus, Hippolita, Egeus and his Lords.
+
+Hip.
+
 'Tis strange my
-<hi rend="italic">Theseus</hi>
-, y
-<hi rend="superscript">t</hi>
+
+Theseus
+, yt
 these louers speake of.
-</l>
-</sp>
-<sp who="#F-mnd-duk">
-<speaker rend="italic">The.</speaker>
-<l n="1718">More strange then true. I neuer may beleeue</l>
-<l n="1719">These anticke fables, nor these Fairy toyes,</l>
-<l n="1720">Louers and mad men haue such seething braines,</l>
-<l n="1721">Such shaping phantasies, that apprehend more</l>
-<l n="1722">Then coole reason euer comprehends.</l>
-<l n="1723">The Lunaticke, the Louer, and the Poet,</l>
-<l n="1724">Are of imagination all compact.</l>
-<l n="1725">
-</l>
-<l n="1726">
+
+The.
+More strange then true. I neuer may beleeue
+<These anticke fables, nor these Fairy toyes,
+Louers and mad men haue such seething braines,
+Such shaping phantasies, that apprehend more
+Then coole reason euer comprehends.
+The Lunaticke, the Louer, and the Poet,
+Are of imagination all compact.
+
 That is the mad man. The Louer, all as frantick
-<gap rend="repair" agent="patch" extent="2" unit="chars"/>
-franticke,
-<note resp="#ES">Here a paper patch obscures the end of the line</note>
-</l>
-<l n="1727">
 Sees
-<hi rend="italic">Helens</hi>
+Helens
 beauty in a brow of
-<hi rend="italic">Egipt</hi>
+Egipt
