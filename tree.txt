@@ -1,0 +1,1395 @@
+.
+├── 01_Fm-3m_phonon_calculation
+│   ├── control.in
+│   ├── gamma_1_amp20.xyz
+│   ├── gamma_1_amp20.xyz_jmol
+│   ├── gamma_animation.ascii
+│   ├── geometry.in
+│   ├── job.sh
+│   ├── MY_animation.ascii
+│   ├── MZ_animation.ascii
+│   ├── phonopy-FHI-aims-band_structure.dat
+│   ├── phonopy-FHI-aims-band_structure.pdf
+│   ├── phonopy-FHI-aims-displacement-01
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── job.sh
+│   │   └── phonopy-FHI-aims-displacement-01.out
+│   ├── phonopy-FHI-aims-displacement-02
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── job.sh
+│   │   └── phonopy-FHI-aims-displacement-02.out
+│   ├── phonopy-FHI-aims-displacement-03
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── job.sh
+│   │   └── phonopy-FHI-aims-displacement-03.out
+│   ├── phonopy-FHI-aims-displacement-04
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── job.sh
+│   │   └── phonopy-FHI-aims-displacement-04.out
+│   ├── phonopy-FHI-aims-eigen-frequencies-and-vectors-at-Gamma.dat
+│   ├── phonopy-FHI-aims-force_constants.dat
+│   ├── R_1_amp20.xyz
+│   ├── R_animation.ascii
+│   ├── submit.sh
+│   └── sub.sh
+├── 02_structural_relaxation
+│   ├── 01_step
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── geometry.in.next_step
+│   │   ├── hessian.aims
+│   │   ├── job.sh.debug
+│   │   └── slurm-3078327.out
+│   ├── 02_step
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── geometry.in.next_step
+│   │   ├── hessian.aims
+│   │   ├── job.sh.debug
+│   │   └── slurm-3081665.out
+│   ├── 03_step
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── geometry.in.next_step
+│   │   ├── hessian.aims
+│   │   ├── job.sh.debug
+│   │   └── slurm-3166346.out
+│   ├── 04_step
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── geometry.in.next_step
+│   │   ├── hessian.aims
+│   │   ├── job.sh.debug
+│   │   └── slurm-3174522.out
+│   ├── 05_step
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── geometry.in.next_step
+│   │   ├── hessian.aims
+│   │   ├── jobscript.sh
+│   │   └── slurm-10695453.out
+│   └── 06_step
+│       ├── aims.err
+│       ├── aims.out
+│       ├── control.in
+│       ├── geometry.in
+│       ├── geometry.in.next_step
+│       ├── hessian.aims
+│       ├── jobscript.sh
+│       └── slurm-10696448.out
+├── 03_symmetrization_and_centering
+│   ├── geometry.in
+│   └── geometry_refined.in
+├── 04_P21c_phonon_calculation
+│   ├── control.in
+│   ├── displacement-001
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699656.out
+│   │   └── slurm-10705027.out
+│   ├── displacement-002
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699657.out
+│   │   └── slurm-10705029.out
+│   ├── displacement-003
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699658.out
+│   │   └── slurm-10705031.out
+│   ├── displacement-004
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699659.out
+│   │   └── slurm-10705032.out
+│   ├── displacement-005
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699660.out
+│   │   └── slurm-10705033.out
+│   ├── displacement-006
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699661.out
+│   │   └── slurm-10705034.out
+│   ├── displacement-007
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699662.out
+│   │   └── slurm-10705035.out
+│   ├── displacement-008
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699663.out
+│   │   ├── slurm-10705036.out
+│   │   └── slurm-10705372.out
+│   ├── displacement-009
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699664.out
+│   ├── displacement-010
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699665.out
+│   ├── displacement-011
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699666.out
+│   ├── displacement-012
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699667.out
+│   ├── displacement-013
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699668.out
+│   ├── displacement-014
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699669.out
+│   ├── displacement-015
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699670.out
+│   ├── displacement-016
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699671.out
+│   ├── displacement-017
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699672.out
+│   ├── displacement-018
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699673.out
+│   ├── displacement-019
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699674.out
+│   ├── displacement-020
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699675.out
+│   ├── displacement-021
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699676.out
+│   ├── displacement-022
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699677.out
+│   ├── displacement-023
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   ├── slurm-10699678.out
+│   │   └── slurm-10705045.out
+│   ├── displacement-024
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699679.out
+│   ├── displacement-025
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699680.out
+│   ├── displacement-026
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699681.out
+│   ├── displacement-027
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10699682.out
+│   ├── electronic_structure
+│   │   ├── aims.err
+│   │   ├── aims.out
+│   │   ├── control.in
+│   │   ├── geometry.in
+│   │   ├── jobscript.sh
+│   │   └── slurm-10697162.out
+│   ├── FORCE_CONSTANTS
+│   ├── FORCE_SETS
+│   ├── geometry.in
+│   ├── geometry.in.supercell
+│   ├── jobscript.sh
+│   ├── phonopy_disp.yaml
+│   ├── phonopy.yaml
+│   └── postprocessing
+│       ├── 00_BEC_and_dielectric_calculations
+│       │   ├── 00_dielectric
+│       │   │   ├── 01_attempt
+│       │   │   │   ├── aims.err
+│       │   │   │   ├── aims.out
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── jobscript.sh
+│       │   │   │   └── slurm-13164262.out
+│       │   │   ├── aims.err
+│       │   │   ├── aims.out
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13164280.out
+│       │   ├── 01_Sn_2_1.5_1.5
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   ├── llss
+│       │   │   └── slurm-13163766.out
+│       │   ├── 02_Sn_3_2_2
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── Sn_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── Sn_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13163767.out
+│       │   ├── 03_Cs_3_2_2
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── Cs_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   ├── Cs_disp_0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── Cs_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   ├── Cs_disp_0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── Cs_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   ├── Cs_disp_0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13163768.out
+│       │   ├── 04_I1_3_2_2
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13163769.out
+│       │   ├── 05_I2_3_3_2
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13163770.out
+│       │   ├── 06_I3_3_2_2
+│       │   │   ├── 01_Nx
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 02_Ny
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── 03_Nz
+│       │   │   │   ├── control.in
+│       │   │   │   ├── geometry.in
+│       │   │   │   ├── I_disp_-0.01
+│       │   │   │   │   ├── aims.out
+│       │   │   │   │   ├── control.in
+│       │   │   │   │   └── geometry.in
+│       │   │   │   └── I_disp_0.01
+│       │   │   │       ├── aims.out
+│       │   │   │       ├── control.in
+│       │   │   │       └── geometry.in
+│       │   │   ├── control.in
+│       │   │   ├── geometry.in
+│       │   │   ├── jobscript.sh
+│       │   │   └── slurm-13163771.out
+│       │   ├── control.in
+│       │   └── geometry.in
+│       ├── 01_nac
+│       │   ├── 0cm-1.vesta
+│       │   ├── 124pt44cm-1.vesta
+│       │   ├── 77pt93.vesta
+│       │   ├── 79pt55cm-1.vesta
+│       │   ├── 92pt87cm-1.vesta
+│       │   ├── band_og.yaml
+│       │   ├── band.yaml
+│       │   ├── BORN
+│       │   ├── Cs2SnI6_P21c_nac.png
+│       │   ├── FORCE_CONSTANTS
+│       │   ├── FORCE_SETS
+│       │   ├── geometry_Cs2SnI6test.in
+│       │   ├── geometry.in
+│       │   ├── irreps.yaml
+│       │   ├── irrep_table.tex
+│       │   ├── phonopy_disp.yaml
+│       │   ├── phonopy.yaml
+│       │   ├── qpoints_for_raman.yaml
+│       │   ├── qpoints.yaml
+│       │   └── settings.conf
+│       ├── 02_no_nac
+│       │   ├── band.yaml
+│       │   ├── Cs2SnI6_P21c_NO_nac.png
+│       │   ├── FORCE_CONSTANTS
+│       │   ├── FORCE_SETS
+│       │   ├── geometry.in
+│       │   ├── phonopy_disp.yaml
+│       │   ├── phonopy.yaml
+│       │   ├── qpoints.yaml
+│       │   └── settings.conf
+│       └── Cs2SnI6_overlaid_nac.png
+└── 05_P21c_Raman_Intensities
+    ├── 00_DFPT_calculations
+    │   ├── aims.i_atom_0.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829237.out
+    │   ├── aims.i_atom_0.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829238.out
+    │   ├── aims.i_atom_0.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829239.out
+    │   ├── aims.i_atom_0.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829240.out
+    │   ├── aims.i_atom_0.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829241.out
+    │   ├── aims.i_atom_0.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829242.out
+    │   ├── aims.i_atom_10.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829243.out
+    │   ├── aims.i_atom_10.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829244.out
+    │   │   └── slurm-10831011.out
+    │   ├── aims.i_atom_10.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829245.out
+    │   │   └── slurm-10831012.out
+    │   ├── aims.i_atom_10.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829246.out
+    │   │   └── slurm-10831013.out
+    │   ├── aims.i_atom_10.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829247.out
+    │   ├── aims.i_atom_10.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829248.out
+    │   ├── aims.i_atom_11.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829249.out
+    │   ├── aims.i_atom_11.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829250.out
+    │   │   └── slurm-10831014.out
+    │   ├── aims.i_atom_11.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829251.out
+    │   ├── aims.i_atom_11.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829252.out
+    │   ├── aims.i_atom_11.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829253.out
+    │   │   └── slurm-10831015.out
+    │   ├── aims.i_atom_11.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829254.out
+    │   ├── aims.i_atom_12.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829255.out
+    │   ├── aims.i_atom_12.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829256.out
+    │   │   ├── slurm-10831016.out
+    │   │   └── slurm-10832216.out
+    │   ├── aims.i_atom_12.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829257.out
+    │   ├── aims.i_atom_12.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829258.out
+    │   │   └── slurm-10831017.out
+    │   ├── aims.i_atom_12.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829259.out
+    │   ├── aims.i_atom_12.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829260.out
+    │   ├── aims.i_atom_13.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829261.out
+    │   │   └── slurm-10831018.out
+    │   ├── aims.i_atom_13.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829262.out
+    │   ├── aims.i_atom_13.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829263.out
+    │   ├── aims.i_atom_13.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829264.out
+    │   ├── aims.i_atom_13.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829265.out
+    │   ├── aims.i_atom_13.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829266.out
+    │   ├── aims.i_atom_14.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829267.out
+    │   │   ├── slurm-10831019.out
+    │   │   └── slurm-10832217.out
+    │   ├── aims.i_atom_14.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829268.out
+    │   ├── aims.i_atom_14.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829269.out
+    │   │   ├── slurm-10831020.out
+    │   │   └── slurm-10832218.out
+    │   ├── aims.i_atom_14.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829270.out
+    │   ├── aims.i_atom_14.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829271.out
+    │   ├── aims.i_atom_14.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829272.out
+    │   ├── aims.i_atom_15.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829273.out
+    │   ├── aims.i_atom_15.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829274.out
+    │   ├── aims.i_atom_15.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829275.out
+    │   ├── aims.i_atom_15.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829276.out
+    │   ├── aims.i_atom_15.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829277.out
+    │   ├── aims.i_atom_15.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829278.out
+    │   ├── aims.i_atom_16.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829279.out
+    │   ├── aims.i_atom_16.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829280.out
+    │   ├── aims.i_atom_16.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829281.out
+    │   ├── aims.i_atom_16.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829282.out
+    │   ├── aims.i_atom_16.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829283.out
+    │   ├── aims.i_atom_16.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829284.out
+    │   ├── aims.i_atom_17.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829285.out
+    │   ├── aims.i_atom_17.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829286.out
+    │   ├── aims.i_atom_17.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829287.out
+    │   ├── aims.i_atom_17.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829288.out
+    │   ├── aims.i_atom_17.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829289.out
+    │   ├── aims.i_atom_17.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829290.out
+    │   ├── aims.i_atom_1.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829291.out
+    │   │   ├── slurm-10831021.out
+    │   │   └── slurm-10832219.out
+    │   ├── aims.i_atom_1.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829292.out
+    │   ├── aims.i_atom_1.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829293.out
+    │   ├── aims.i_atom_1.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829294.out
+    │   ├── aims.i_atom_1.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829295.out
+    │   ├── aims.i_atom_1.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829296.out
+    │   ├── aims.i_atom_2.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829297.out
+    │   ├── aims.i_atom_2.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829298.out
+    │   │   ├── slurm-10831022.out
+    │   │   └── slurm-10832220.out
+    │   ├── aims.i_atom_2.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829299.out
+    │   ├── aims.i_atom_2.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829300.out
+    │   ├── aims.i_atom_2.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829301.out
+    │   ├── aims.i_atom_2.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829302.out
+    │   ├── aims.i_atom_3.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829303.out
+    │   │   └── slurm-10831023.out
+    │   ├── aims.i_atom_3.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829304.out
+    │   ├── aims.i_atom_3.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829305.out
+    │   │   └── slurm-10831024.out
+    │   ├── aims.i_atom_3.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829306.out
+    │   │   └── slurm-10831025.out
+    │   ├── aims.i_atom_3.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829307.out
+    │   ├── aims.i_atom_3.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829308.out
+    │   │   └── slurm-10831026.out
+    │   ├── aims.i_atom_4.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829309.out
+    │   ├── aims.i_atom_4.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829310.out
+    │   ├── aims.i_atom_4.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829311.out
+    │   ├── aims.i_atom_4.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829312.out
+    │   ├── aims.i_atom_4.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829313.out
+    │   │   └── slurm-10831027.out
+    │   ├── aims.i_atom_4.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829314.out
+    │   ├── aims.i_atom_5.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829315.out
+    │   ├── aims.i_atom_5.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829316.out
+    │   ├── aims.i_atom_5.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829317.out
+    │   ├── aims.i_atom_5.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829318.out
+    │   ├── aims.i_atom_5.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829319.out
+    │   │   └── slurm-10831028.out
+    │   ├── aims.i_atom_5.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829320.out
+    │   ├── aims.i_atom_6.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829321.out
+    │   ├── aims.i_atom_6.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829322.out
+    │   ├── aims.i_atom_6.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829323.out
+    │   ├── aims.i_atom_6.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829324.out
+    │   ├── aims.i_atom_6.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829325.out
+    │   ├── aims.i_atom_6.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829326.out
+    │   │   └── slurm-10831029.out
+    │   ├── aims.i_atom_7.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829327.out
+    │   ├── aims.i_atom_7.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829328.out
+    │   │   └── slurm-10831030.out
+    │   ├── aims.i_atom_7.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829329.out
+    │   ├── aims.i_atom_7.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829330.out
+    │   ├── aims.i_atom_7.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829331.out
+    │   ├── aims.i_atom_7.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829332.out
+    │   │   └── slurm-10831031.out
+    │   ├── aims.i_atom_8.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829333.out
+    │   ├── aims.i_atom_8.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829334.out
+    │   ├── aims.i_atom_8.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829335.out
+    │   ├── aims.i_atom_8.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829336.out
+    │   ├── aims.i_atom_8.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829337.out
+    │   ├── aims.i_atom_8.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829338.out
+    │   ├── aims.i_atom_9.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829339.out
+    │   ├── aims.i_atom_9.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829340.out
+    │   ├── aims.i_atom_9.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829341.out
+    │   ├── aims.i_atom_9.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829342.out
+    │   ├── aims.i_atom_9.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829343.out
+    │   └── aims.i_atom_9.i_coord_2.displ_0.01
+    │       ├── aims.err
+    │       ├── aims.out
+    │       ├── control.in
+    │       ├── geometry.in
+    │       ├── jobscript.sh
+    │       ├── slurm-10829344.out
+    │       └── slurm-10831032.out
+    ├── 01_nac
+    │   ├── aims.Raman
+    │   ├── aims_Raman_spectrum.csv
+    │   ├── aims_Raman_spectrum.pdf
+    │   ├── aims.xyz
+    │   ├── car_eig_vec.aims.dat
+    │   ├── eigen_vectors.aims.dat
+    │   ├── grad_dipole.aims.dat
+    │   ├── masses.aims.dat
+    │   ├── mass_vec.aims.dat
+    │   ├── massweighted_Hessian.aims.dat
+    │   ├── normalmodes.aims.dat
+    │   └── qpoints.yaml
+    └── 02_no_nac
+        ├── aims.Raman
+        ├── aims_Raman_spectrum.csv
+        ├── aims_Raman_spectrum.pdf
+        ├── aims.xyz
+        ├── car_eig_vec.aims.dat
+        ├── eigen_vectors.aims.dat
+        ├── grad_dipole.aims.dat
+        ├── masses.aims.dat
+        ├── mass_vec.aims.dat
+        ├── massweighted_Hessian.aims.dat
+        ├── normalmodes.aims.dat
+        └── qpoints.yaml
+
+223 directories, 1181 files
