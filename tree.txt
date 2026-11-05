@@ -34,8 +34,8 @@
 │   ├── phonopy-FHI-aims-force_constants.dat
 │   ├── R_1_amp20.xyz
 │   ├── R_animation.ascii
-│   ├── submit.sh
-│   └── sub.sh
+│   ├── sub.sh
+│   └── submit.sh
 ├── 02_structural_relaxation
 │   ├── 01_step
 │   │   ├── control.in
@@ -84,8 +84,8 @@
 │       ├── jobscript.sh
 │       └── slurm-10696448.out
 ├── 03_symmetrization_and_centering
-│   ├── geometry.in
-│   └── geometry_refined.in
+│   ├── geometry_refined.in
+│   └── geometry.in
 ├── 04_P21c_phonon_calculation
 │   ├── control.in
 │   ├── displacement-001
@@ -549,24 +549,16 @@
 │       │   ├── control.in
 │       │   └── geometry.in
 │       ├── 01_nac
-│       │   ├── 0cm-1.vesta
-│       │   ├── 124pt44cm-1.vesta
-│       │   ├── 77pt93.vesta
-│       │   ├── 79pt55cm-1.vesta
-│       │   ├── 92pt87cm-1.vesta
-│       │   ├── band_og.yaml
 │       │   ├── band.yaml
 │       │   ├── BORN
 │       │   ├── Cs2SnI6_P21c_nac.png
 │       │   ├── FORCE_CONSTANTS
 │       │   ├── FORCE_SETS
-│       │   ├── geometry_Cs2SnI6test.in
 │       │   ├── geometry.in
-│       │   ├── irreps.yaml
 │       │   ├── irrep_table.tex
+│       │   ├── irreps.yaml
 │       │   ├── phonopy_disp.yaml
 │       │   ├── phonopy.yaml
-│       │   ├── qpoints_for_raman.yaml
 │       │   ├── qpoints.yaml
 │       │   └── settings.conf
 │       ├── 02_no_nac
@@ -624,6 +616,50 @@
     │   │   ├── geometry.in
     │   │   ├── jobscript.sh
     │   │   └── slurm-10829242.out
+    │   ├── aims.i_atom_1.i_coord_0.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   ├── slurm-10829291.out
+    │   │   ├── slurm-10831021.out
+    │   │   └── slurm-10832219.out
+    │   ├── aims.i_atom_1.i_coord_0.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829292.out
+    │   ├── aims.i_atom_1.i_coord_1.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829293.out
+    │   ├── aims.i_atom_1.i_coord_1.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829294.out
+    │   ├── aims.i_atom_1.i_coord_2.displ_-0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829295.out
+    │   ├── aims.i_atom_1.i_coord_2.displ_0.01
+    │   │   ├── aims.err
+    │   │   ├── aims.out
+    │   │   ├── control.in
+    │   │   ├── geometry.in
+    │   │   ├── jobscript.sh
+    │   │   └── slurm-10829296.out
     │   ├── aims.i_atom_10.i_coord_0.displ_-0.01
     │   │   ├── aims.err
     │   │   ├── aims.out
@@ -973,50 +1009,6 @@
     │   │   ├── geometry.in
     │   │   ├── jobscript.sh
     │   │   └── slurm-10829290.out
-    │   ├── aims.i_atom_1.i_coord_0.displ_-0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   ├── slurm-10829291.out
-    │   │   ├── slurm-10831021.out
-    │   │   └── slurm-10832219.out
-    │   ├── aims.i_atom_1.i_coord_0.displ_0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   └── slurm-10829292.out
-    │   ├── aims.i_atom_1.i_coord_1.displ_-0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   └── slurm-10829293.out
-    │   ├── aims.i_atom_1.i_coord_1.displ_0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   └── slurm-10829294.out
-    │   ├── aims.i_atom_1.i_coord_2.displ_-0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   └── slurm-10829295.out
-    │   ├── aims.i_atom_1.i_coord_2.displ_0.01
-    │   │   ├── aims.err
-    │   │   ├── aims.out
-    │   │   ├── control.in
-    │   │   ├── geometry.in
-    │   │   ├── jobscript.sh
-    │   │   └── slurm-10829296.out
     │   ├── aims.i_atom_2.i_coord_0.displ_-0.01
     │   │   ├── aims.err
     │   │   ├── aims.out
@@ -1366,30 +1358,31 @@
     │       ├── slurm-10829344.out
     │       └── slurm-10831032.out
     ├── 01_nac
-    │   ├── aims.Raman
     │   ├── aims_Raman_spectrum.csv
     │   ├── aims_Raman_spectrum.pdf
+    │   ├── aims.Raman
     │   ├── aims.xyz
     │   ├── car_eig_vec.aims.dat
     │   ├── eigen_vectors.aims.dat
     │   ├── grad_dipole.aims.dat
-    │   ├── masses.aims.dat
     │   ├── mass_vec.aims.dat
+    │   ├── masses.aims.dat
     │   ├── massweighted_Hessian.aims.dat
     │   ├── normalmodes.aims.dat
     │   └── qpoints.yaml
     └── 02_no_nac
-        ├── aims.Raman
         ├── aims_Raman_spectrum.csv
         ├── aims_Raman_spectrum.pdf
+        ├── aims.Raman
         ├── aims.xyz
         ├── car_eig_vec.aims.dat
         ├── eigen_vectors.aims.dat
         ├── grad_dipole.aims.dat
-        ├── masses.aims.dat
         ├── mass_vec.aims.dat
+        ├── masses.aims.dat
         ├── massweighted_Hessian.aims.dat
         ├── normalmodes.aims.dat
         └── qpoints.yaml
 
-223 directories, 1181 files
+221 directories, 1164 files
+(base) hms75@AUDS-KVM6WXM066 final_dataset % 
